@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guessing Game</title>
+    <!-- Bootstrap and CSS here-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+      <div id='app'>
+
+        <div id='headers' class='center'>
+          <h1 id='title'>Play the Guessing Game!</h1>
+          <h2 id='subtitle'>Guess a number between 1-100!</h2>
+        </div>
+
+        <div id='main' class='center'>
+            <div id='input-parent'>
+                <input id='players-input' class='center' placeholder="#" maxlength='3' autofocus=autofocus></input>
+                <button id='go-button' class='btn btn-success'>Go!</button>
+            </div>
+
+          <div id='guesses' class='center'>
+            <h2>Your Guesses:</h2>
+            <!-- unordered list of guesses -->
+            <ul id='guess-list'>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+            </ul>
+            
+          </div>
+
+          <div id="menu-btns" class='center'>
+            <button id="reset" type="button" class='btn btn-warning btn-lg'>Reset</button>
+            <button id="hint" type="button" class='btn btn-info btn-lg'>Hint</button>
+            <!-- reset and hint buttons -->
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer' class='center'>
+        <div class='row'>
+          <div class='col-sm-4'>
+            <img src='images/fa-logo@2x.png'></img>
+          </div>
+
+          <div class='col-sm-4'>
+            <h4>Project by Lucy Sutton</h4>
+          </div>
+
+          <div class='col-sm-4'>
+            <img src='images/grace_hopper_academy.png'></img>
+          </div>
+
+
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/GuessingGame.js"></script>
+  </body>
+</html>
